@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="one">
+        <div class="info">
+          <button id="certified">Certified Online Training</button>
+          <h1>Web <span class="underline">Development</span> Course</h1>
+          <p>
+            Learn Full Stack Web Development: HTML/CSS, MySQL, PHP, JavaScript,
+            and React and build a website from scratch!
+          </p>
+          <p>Languages : <strong>Hindi, English</strong></p>
+          <button class="offer">
+            1+1 Offer: Get Internship & Job Preparation training FREE on purchase
+            of Web Development training!
+          </button>
+          <button class="btn-enroll"  onclick="showRegistrationForm()">Enroll Now</button>
+    
+        </div>
+        <div id="registrationPopup" class="popup">
+          
+            <h2>Registration Form</h2>
+            <!-- Your registration form content goes here -->
+            <form class="formReg" method="post" action="#" name="submit-to-google-sheet" role="form">
+              <!-- Form fields go here -->
+              <input class="inp" type="text" name="Name" placeholder="Name" required>
+              <input class="inp" type="email" name="Email" placeholder="Email" required>
+              <input class="inp" type="number" name="MobileNo"  placeholder="mobile no">
+              <input class="inp" type="date" name="Date"  placeholder="appointment date">
+              <select id="cading" name="Course" class="carding">
+                <option value="Courses">Select Course</option>
+                <option value="Product Development">
+                  Product Management
+                </option>
+                <option value=" Enterpreneurship">
+                  Entrepreneurship
+                </option>
+                <option value="Internship">Web Development</option>
+                <option value="Internship">Web Development</option>
+                <option value="Internship">Web Development</option>
+                <option value="Internship">Web Development</option>
+                <option value="Internship">Web Development</option>
+                <option value="Internship">Web Development</option>
+
+                <option value="Internship">Internship</option>
+                <option value="Internship">SAP FICO</option>
+                </select>
+              <button class="btn-enroll" onclick="submitForm()" type="submit">Submit</button>
+          </div>
+            </form>
+          </div>
+      
+          <!-- Thank You Popup -->
+          <div id="thankyouPopup" class="popup thankyou-popup">
+            
+            <h2 style="margin: 10px 0;">Thank You!</h2>
+            <p style="margin: 10px 0;">Your registration is successful. We will contact you shortly.</p>
+            <button class="btn-enroll" onclick="closeThankYouPopup()">OK</button>
+          </div>
+        <div class="pic">
+          <img src="35.jpg" />
+        </div>
+      </section>
+</body>
+<script src="/script.js"></script>
+</html>
